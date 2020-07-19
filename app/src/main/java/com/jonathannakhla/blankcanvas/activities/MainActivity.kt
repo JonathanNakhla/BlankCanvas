@@ -11,8 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction()
-            .add(R.id.main_container, MainFragment.newInstance(), MainFragment.TAG)
-            .commit()
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.main_container, MainFragment.newInstance(), MainFragment.TAG)
+                .commit()
+        }
     }
 }

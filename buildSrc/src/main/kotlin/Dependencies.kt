@@ -17,17 +17,16 @@ object BuildVersions {
 }
 
 object Versions {
-    const val kotlin = "1.3.60"
+    const val kotlin = "1.3.70"
     const val serializationRuntime = "0.14.0"
     const val room = "2.2.5"
     const val workManager = "2.3.4"
     const val rxjava = "3.0.2"
     const val rxandroid = "3.0.0-SNAPSHOT"
     const val rxjava3Bridge = "3.0.0"
-    const val retrofit = "2.7.1"
-    const val retrofitKotlinxSerializationConverter = "0.4.0"
-    const val rxjavaCallAdapter = "3.0.0-RC8"
-    const val androidGradlePlugin = "3.5.2"
+    const val retrofit = "2.9.0"
+    const val retrofitKotlinxSerializationConverter = "0.5.0"
+    const val androidGradlePlugin = "4.0.1"
     const val support = "1.1.0"
     const val constraintLayout = "1.1.3"
     const val recyclerview = "1.1.0"
@@ -38,7 +37,7 @@ object Versions {
     const val chuck = "1.1.0"
     const val leakCanary = "2.2"
     const val junit = "5.4.0"
-    const val mockk = "1.9.3.kotlin12"
+    const val mockk = "1.10.0"
 }
 
 object Kotlin {
@@ -54,8 +53,8 @@ object RxLibraries {
 
 object NetworkLibraries {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val rxjavaCallAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.retrofit}"
     const val retrofitKotlinxSerializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitKotlinxSerializationConverter}"
-    const val rxjavaCallAdapter = "com.github.akarnokd:rxjava3-retrofit-adapter:${Versions.rxjavaCallAdapter}"
 }
 
 object SupportLibraries {
